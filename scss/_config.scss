@@ -1,0 +1,31 @@
+$first-color: #444;
+$second-color: #ee6838;
+$show-home-image: false;
+$home-image: url(../image/laptop.jpeg);
+$background-opacity: 0.5;
+
+@mixin easeOut{
+    transition: all 1.5s ease-out; 
+}
+
+@mixin background{
+    @if ($show-home-image == false) {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover; 
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($first-color,$background-opacity);
+            }    
+
+        }
+    }
+}
