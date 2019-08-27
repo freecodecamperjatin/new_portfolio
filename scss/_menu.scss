@@ -14,7 +14,7 @@ $portrait-image: url('../image/portrait-sm.jpeg');
         width: 28px;
         height: 3px;  
         margin: 0 0 5px 0;
-        background: $second-color;
+        background: set-text-color($first-color);
         @include easeOut;
     }
 
@@ -123,7 +123,7 @@ $portrait-image: url('../image/portrait-sm.jpeg');
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: white;
+        color: set-text-color($first-color);
         text-decoration: none;
         @include easeOut;
 
