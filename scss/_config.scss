@@ -1,5 +1,5 @@
 $first-color: #444;
-$second-color: #ee6838;
+$second-color: #eece1a;
 $show-home-image: false;
 $home-image: url(../image/laptop.jpeg);
 $background-opacity: 0.5;
@@ -27,5 +27,30 @@ $background-opacity: 0.5;
             }    
 
         }
+    }
+}
+
+// Media Query Mixings 
+@mixin mediaSm{
+    @media screen and (max-width: 500px){
+         @content;
+    }
+}
+
+@mixin mediaMd{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mediaLg{
+    @media screen and (min-width: 769px) and (max-width: 1170px){
+        @content;
+    }
+}
+
+@mixin mediaXl{
+    @media screen and (min-width: 1171px){
+        @content;
     }
 }

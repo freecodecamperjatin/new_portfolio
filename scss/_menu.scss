@@ -110,6 +110,10 @@ $portrait-image: url('../image/portrait-sm.jpeg');
         &.show{
             transform: translate3d(0,0,0);
         }
+
+        &.current >a {
+            color: $second-color;
+        }
     }
 
     .nav-link{
