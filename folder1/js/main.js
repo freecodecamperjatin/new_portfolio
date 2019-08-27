@@ -3,7 +3,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBrand = document.querySelector('.menu-brand');
-const navItem = document.querySelectorAll('.nav-item');
+const navItem = document.querySelectorAll('.nav-items');
 
 // This is our dom selection which will be used to change the page 
 
