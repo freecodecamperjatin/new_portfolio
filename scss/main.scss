@@ -131,6 +131,48 @@ main{
     border-bottom: $second-color 5px solid;
 }
 
+//Work/Projects
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem; 
+
+    img{
+        width: 100%;
+        border: #fff solid 3px; 
+
+        &:hover{
+            opacity: 0.5;
+            border-color: $second-color;
+            @include easeOut;
+        }
+    }
+}
+
+//Button styles
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover{
+        background: $second-color;
+        color: set-text-color($second-color);
+    } 
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($first-color, 50);
+    color: #fff;
+}
+
+.btn-light{
+    @extend .btn;
+    background: lighten($first-color, 50);
+    color: #333;
+}
+
 footer{
     text-align: center;
     padding: 1rem;
