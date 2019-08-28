@@ -207,7 +207,7 @@ main {
       transition: all 1s ease-out; }
 
 .box {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
